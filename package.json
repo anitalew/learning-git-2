@@ -19,7 +19,7 @@
   "watch:sass": "node-sass --output-style expanded --source-map true -o css sass",
   "watch:autoprefixer": "autoprefixer-cli css/style.css",
   "watch:sassprefixer": "onchange -d 100 sass/*.scss -- npm-run-all watch:sass watch:autoprefixer",
-  "watch:browsersync": "browser-sync start --server --files css/*.css *.html"
+  "watch:browsersync": "browser-sync start --server --files \"css/*.css\" \"*.html\""
  },
  "keywords": [],
  "author": "",
@@ -28,8 +28,11 @@
   "autoprefixer-cli": "^1.0.0",
   "browser-sync": "^2.23.7",
   "globstar": "^1.0.0",
+  "mkdirp": "^0.5.1",
   "node-sass": "^4.8.3",
   "nu-html-checker": "^0.1.0",
-  "onchange": "^3.3.0"
+  "onchange": "^3.3.0",
+  "run": "^1.4.0",
+  "test": "^0.6.0"
  }
 }
